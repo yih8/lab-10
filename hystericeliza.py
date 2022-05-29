@@ -4,9 +4,9 @@ from abc import abstractmethod
 from eliza import Eliza
 
 
-class ElizaState():
-    def __init__(self, hystericeliza):
-        self.hystericeliza = hystericeliza
+class ElizaState:
+    def __init__(self, hysteric_eliza):
+        self.hysteric_eliza = hysteric_eliza
 
     @abstractmethod
     def switch_state(self, output):
@@ -32,7 +32,7 @@ class Sad(ElizaState):
     pass
 
 
-class HystericEliza():
+class HystericEliza:
     def __init__(self):
         self.eliza = Eliza()
         self.state = "Normal"
